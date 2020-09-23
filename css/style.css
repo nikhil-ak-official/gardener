@@ -12,10 +12,12 @@ p {
     line-height: 1.5em;
     color: grey;
     font-family: 'Manrope-medium';
+    font-size: 16px;
 }
 .container {
     max-width: 1200px;
     margin: 0 auto;
+   
 }
 .main-header {
     display: flex;
@@ -28,7 +30,7 @@ p {
 
 .navigator a {
     text-decoration: none;
-    color: black;
+    color: #000000;
     padding: 10px;
 }
 .gardener {
@@ -57,7 +59,7 @@ h3 {
 #contact-us {
     padding: 8px 12px 8px 12px;
     background-color: var(--gogreen);
-    color: white;
+    color: #ffffff;
     border: none;
     border-radius: 5px;
 
@@ -86,9 +88,10 @@ h3 {
 .offer h2, h3 {
     text-align: center;
 }
-#content-head {
+.content-head {
     font-size: 20px;
     color: #3a3a3a;
+    font-family: 'Manrope-bold';
 }
 .offer-content img {
     border-radius: 50%;
@@ -111,7 +114,7 @@ h3 {
     color: var(--gogreen);
     border: 1px solid var(--gogreen);
     padding: 8px 12px 8px 12px;
-    background-color: white;
+    background-color: #ffffff;
     border-radius: 5px;
     font-family: 'Manrope-bold';
 
@@ -151,20 +154,19 @@ h3 {
     padding-top: 30px;
     max-width: 900px;
     margin: 0 auto;
+    justify-content: space-between;
 }
-
-.clients img {
-    margin-right: 30px;
+.clients-content {
+    flex-basis: 560px;
 }
-.clients figure {
-    margin: 0px 0px 0px 10px;
-
-}
-
-
 #client-name {
     font-size: 20px;
     font-family: 'Manrope-bold';
+    color: #000000;
+    margin-bottom: 0px;
+}
+.clients-content p:last-child {
+    margin-top: 0px;
 }
 .clients-content img {
     border-radius: 50%;
@@ -195,7 +197,7 @@ h3 {
     width:120px;
     height:50px;
     background-color: var(--gogreen);
-    color: white;
+    color: #ffffff;
     border-radius: 5px;
     border: none;
     font-size: 20px;
@@ -210,8 +212,11 @@ h3 {
     flex-wrap: wrap;
 }
 .footer-gardener,.link,.contact,.day-time {
-    width: 25%;
+    flex-basis: 25%;
 
+}
+.footer-gardener {
+    padding-left: 30px;
 }
 footer ul {
     list-style: none;
@@ -226,10 +231,15 @@ h4 {
     margin: 23px 0px;
     
 }
+
 footer a {
     text-decoration: none;
     color: grey;
 }
+.link {
+    padding-left: 30px;
+}
+
 .day-time {
     display: flex;
     flex-wrap: wrap;
@@ -239,6 +249,9 @@ footer a {
 }
 .time {
     align-self: flex-end;
+}
+.time li:last-child {
+    color: var(--gogreen);
 }
 footer hr {
     opacity: 0.5;
