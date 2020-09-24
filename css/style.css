@@ -170,18 +170,18 @@ h3 {
 .clients {
     display: flex;
     padding-top: 30px;
-    max-width: 800px;
+    max-width: 900px;
     margin: 0 auto;
     justify-content: space-between;
 }
 .image3 {
-    flex-basis: 50%;
+    flex-basis: 40%;
 }
 .image3 img {
     border-radius: 10px;
 }
 .clients-content {
-    flex-basis: 50%;
+    flex-basis: 60%;
 }
 #client-name {
     font-size: 20px;
@@ -460,6 +460,10 @@ footer hr {
       .nav-icon:hover div {
         transform: scale(0);
       }
+    .image1 {
+        width: 75%;
+        margin: 0 auto;
+    }
     
     .tab-head {
         display: block;
@@ -471,8 +475,14 @@ footer hr {
     .about-us {
         flex-direction: column;
     }
+    .offer, .about-us, .gardener {
+        padding-bottom: 100px;
+    }
     .about {
         text-align: center;
+    }
+    .image2 {
+        margin: 0 auto;
     }
     .service-container {
         display: flex;
@@ -495,9 +505,19 @@ footer hr {
     }
     .clients-content {
         margin-top: 16px;
+        flex-basis: 60%;
     }
     .clients-content p {
         text-align: center;
+        
+    }
+    .image3 {
+        margin: 0;
+        flex-basis: 30%;
+        margin
+    }
+    .button-inside {
+        width: 100%;
     }
     .footer-container {
         display: flex;
@@ -519,7 +539,10 @@ footer hr {
                
 
                
+
+               
 @media (max-width: 416px) {
+    
     
     .projects-container {
         display: flex;
@@ -538,7 +561,8 @@ footer hr {
     .clients-content img {
         display: none;
     }
-    .button-inside {
-        width: 90%;
+    
+    .newsletter {
+        padding: 30px;
     }
 }
