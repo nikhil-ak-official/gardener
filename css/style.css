@@ -64,6 +64,8 @@ h3 {
     color: #fff;
     border: none;
     border-radius: 5px;
+    font-size: 16px;
+    font-family: 'Manrope-bold';
 
 }
 .image1 {
@@ -199,6 +201,7 @@ h3 {
 .newsletter {
     background-color: #f0f1ec;
     padding: 30px 0px;
+    border-radius: 10px;
 }
 .button-inside {
     position: relative;
@@ -231,7 +234,9 @@ h3 {
 #newsletter-hr {
     margin: 70px 0px;
     opacity: 0.5;
+    margin: 90px 0px 70px 0px;
 }
+
 .footer-container {
     display: flex;
     
@@ -512,7 +517,8 @@ footer hr {
     
 }
                
-<<<<<<< HEAD
+
+               
 @media (max-width: 416px) {
     
     .projects-container {
@@ -536,5 +542,3 @@ footer hr {
         width: 90%;
     }
 }
-=======
->>>>>>> 826217d6e4e3eea74b2938aeaadac46adac80b6a
