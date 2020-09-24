@@ -6,17 +6,18 @@ body {
     font-size: 16px;
     --gogreen: #709d61;
     background-color: #f7f6f4;
+    font-family: 'Manrope-medium';
 }
 
 p {
     line-height: 1.5em;
     color: grey;
-    font-family: 'Manrope-medium';
     font-size: 16px;
 }
 .container {
     max-width: 1200px;
     margin: 0 auto;
+    width: 90%;
    
 }
 .main-header {
@@ -30,7 +31,7 @@ p {
 
 .navigator a {
     text-decoration: none;
-    color: #000000;
+    color: #000;
     padding: 10px;
 }
 .gardener {
@@ -38,6 +39,7 @@ p {
     justify-content: space-between;
     padding-bottom: 50px;
 }
+
 .welcome {
     flex: 1;
     align-self: center;
@@ -59,7 +61,7 @@ h3 {
 #contact-us {
     padding: 8px 12px 8px 12px;
     background-color: var(--gogreen);
-    color: #ffffff;
+    color: #fff;
     border: none;
     border-radius: 5px;
 
@@ -84,6 +86,8 @@ h3 {
     font-size: 16px;
     color: var(--gogreen);
     font-family: 'Manrope-medium';
+    display: table;
+    margin: 0 auto;
 }
 .offer h2, h3 {
     text-align: center;
@@ -98,6 +102,11 @@ h3 {
     text-align: center;
     background-color: #f0f1ec;
     padding: 10px;
+}
+.about-us {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 50px;
 }
 .image2 {
     flex: 1;
@@ -114,9 +123,9 @@ h3 {
     color: var(--gogreen);
     border: 1px solid var(--gogreen);
     padding: 8px 12px 8px 12px;
-    background-color: #ffffff;
     border-radius: 5px;
     font-family: 'Manrope-bold';
+    font-size: 16px;
 
 }
 .service-container {
@@ -124,7 +133,7 @@ h3 {
     flex-wrap: wrap;
 }
 .service-content {
-    width: 33.3%;
+    flex-basis: 33.3%;
     padding: 30px 20px;
 }
 .service-content img {
@@ -133,11 +142,18 @@ h3 {
     text-align: left;
     padding: 10px;
 }
+.service-content h3 {
+    text-align: left;
+}
 .service-content figure {
     margin: 0px;
 }
+.projects-container {
+    display: flex;
+    flex-wrap: wrap;
+}
 .projects-content {
-    width: 33.3%;
+    flex-basis: 33.3%;
     padding: 10px;
 }    
 .projects-content img {
@@ -152,17 +168,23 @@ h3 {
 .clients {
     display: flex;
     padding-top: 30px;
-    max-width: 900px;
+    max-width: 800px;
     margin: 0 auto;
     justify-content: space-between;
 }
+.image3 {
+    flex-basis: 50%;
+}
+.image3 img {
+    border-radius: 10px;
+}
 .clients-content {
-    flex-basis: 560px;
+    flex-basis: 50%;
 }
 #client-name {
     font-size: 20px;
     font-family: 'Manrope-bold';
-    color: #000000;
+    color: #000;
     margin-bottom: 0px;
 }
 .clients-content p:last-child {
@@ -180,7 +202,7 @@ h3 {
 }
 .button-inside {
     position: relative;
-    width: 40%;
+    width: 50%;
     margin: 0 auto;
 }
 .button-inside input {
@@ -192,16 +214,19 @@ h3 {
 }
 #subscribe {
     position: absolute;
-    top: 5px;
+    top: 7px;
     right:7px;
-    width:120px;
-    height:50px;
+    padding: 10px 20px;
     background-color: var(--gogreen);
-    color: #ffffff;
+    color: #fff;
     border-radius: 5px;
     border: none;
     font-size: 20px;
     font-family: 'Manrope-bold';
+
+}
+.newsletter {
+    padding: 50px;
 }
 #newsletter-hr {
     margin: 70px 0px;
@@ -209,15 +234,23 @@ h3 {
 }
 .footer-container {
     display: flex;
-    flex-wrap: wrap;
+    
 }
-.footer-gardener,.link,.contact,.day-time {
-    flex-basis: 25%;
+.footer-gardener,.link,.contact,.daytime-container {
+    flex: 1;
 
 }
 .footer-gardener {
     padding-left: 30px;
 }
+.footer-gardener figure {
+    margin: 26px 0px 20px 0px;
+    width:200px;
+}
+.footer-gardener p {
+    line-height: 1.8em;
+}
+
 footer ul {
     list-style: none;
     color: grey;
@@ -226,10 +259,6 @@ footer ul {
 }
 h4 {
     font-size: 20px;
-}
-.footer-gardener h4 {
-    margin: 23px 0px;
-    
 }
 
 footer a {
@@ -240,16 +269,17 @@ footer a {
     padding-left: 30px;
 }
 
-.day-time {
+.daytime-container {
     display: flex;
     flex-wrap: wrap;
 }
 .day,.time {
-    width: 115px;
+    width: 130px;
 }
-.time {
-    align-self: flex-end;
+.day-time h4 {
+    margin-bottom: 10px;
 }
+
 .time li:last-child {
     color: var(--gogreen);
 }
@@ -323,4 +353,66 @@ footer hr {
     font-style: normal;
     font-display: swap;
 }
+/* TYPOS */ 
+@font-face {
+    font-family: 'Manrope-bold';
+    src: url('../fonts/Manrope-Bold.woff2') format('woff2'),
+        url('../fonts/Manrope-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
 
+@font-face {
+    font-family: 'Manrope-medium';
+    src: url('../fonts/Manrope-Medium.woff2') format('woff2'),
+        url('../fonts/Manrope-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Manrope-regular';
+    src: url('../fonts/Manrope-Regular.woff2') format('woff2'),
+        url('../fonts/Manrope-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Manrope-semibold';
+    src: url('../fonts/Manrope-SemiBold.woff2') format('woff2'),
+        url('../fonts/Manrope-SemiBold.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Manrope-extrabold';
+    src: url('../fonts/Manrope-ExtraBold.woff2') format('woff2'),
+        url('../fonts/Manrope-ExtraBold.woff') format('woff');
+    font-weight: 800;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Manrope-extralight';
+    src: url('../fonts/Manrope-ExtraLight.woff2') format('woff2'),
+        url('../fonts/Manrope-ExtraLight.woff') format('woff');
+    font-weight: 200;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Manrope-light';
+    src: url('../fonts/Manrope-Light.woff2') format('woff2'),
+        url('../fonts/Manrope-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
