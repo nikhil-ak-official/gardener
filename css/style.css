@@ -508,6 +508,7 @@ footer hr {
     .clients-content {
         margin-top: 16px;
         flex-basis: 60%;
+        padding-left: 30px;
     }
     .clients-content p {
         text-align: center;
