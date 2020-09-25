@@ -128,6 +128,7 @@ h3 {
     border-radius: 5px;
     font-family: 'Manrope-bold';
     font-size: 16px;
+    background: transparent;
 
 }
 .service-container {
@@ -287,6 +288,7 @@ footer a {
 
 .time li:last-child {
     color: var(--gogreen);
+    text-align: right;
 }
 footer hr {
     opacity: 0.5;
