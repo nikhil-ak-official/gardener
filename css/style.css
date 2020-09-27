@@ -1,6 +1,5 @@
 * {-webkit-box-sizing: border-box;
     box-sizing: border-box;
-   
 }
 body {
     font-size: 16px;
@@ -8,7 +7,6 @@ body {
     background-color: #f7f6f4;
     font-family: 'Manrope-medium';
 }
-
 p {
     line-height: 1.5em;
     color: grey;
@@ -18,7 +16,6 @@ p {
     max-width: 1200px;
     margin: 0 auto;
     width: 90%;
-   
 }
 .main-header {
     display: flex;
@@ -28,7 +25,6 @@ p {
     align-self: center;
     font-family: 'Manrope-medium';
 }
-
 .navigator a {
     text-decoration: none;
     color: #000;
@@ -39,7 +35,6 @@ p {
     justify-content: space-between;
     padding-bottom: 50px;
 }
-
 .welcome {
     flex: 1;
     align-self: center;
@@ -57,7 +52,6 @@ h3 {
 .font-change {
     color: var(--gogreen);
 }
-
 #contact-us {
     padding: 8px 12px 8px 12px;
     background-color: var(--gogreen);
@@ -66,7 +60,6 @@ h3 {
     border-radius: 5px;
     font-size: 16px;
     font-family: 'Manrope-bold';
-
 }
 .image1 {
     flex: 1;
@@ -213,7 +206,7 @@ h3 {
     width: 100%;
     padding: 20px;
     font-size: 18px;
-    border-radius: 5px;
+    border-radius: 10px;
     border: none;
 }
 #subscribe {
@@ -227,24 +220,20 @@ h3 {
     border: none;
     font-size: 20px;
     font-family: 'Manrope-bold';
-
 }
 .newsletter {
     padding: 50px;
 }
 #newsletter-hr {
-    margin: 70px 0px;
     opacity: 0.5;
-    margin: 90px 0px 70px 0px;
+    margin: 90px 0px 40px 0px;
 }
 
 .footer-container {
     display: flex;
-    
 }
 .footer-gardener,.link,.contact,.daytime-container {
     flex: 1;
-
 }
 .footer-gardener {
     padding-left: 30px;
@@ -256,7 +245,6 @@ h3 {
 .footer-gardener p {
     line-height: 1.8em;
 }
-
 footer ul {
     list-style: none;
     color: grey;
@@ -266,7 +254,6 @@ footer ul {
 h4 {
     font-size: 20px;
 }
-
 footer a {
     text-decoration: none;
     color: grey;
@@ -274,7 +261,6 @@ footer a {
 .link {
     padding-left: 30px;
 }
-
 .daytime-container {
     display: flex;
     flex-wrap: wrap;
@@ -297,6 +283,7 @@ footer hr {
     font-size: 14px;
     text-align: center;
 }
+
 /* TYPOS */ 
 @font-face {
     font-family: 'Manrope-bold';
@@ -426,20 +413,19 @@ footer hr {
 
 /* media */
 @media (max-width: 928px) {
-
     .gardener {
         flex-direction: column-reverse;
         text-align: center;
-
+    }
+    .main-header {
+        align-items: baseline;
     }
     .navigator {
         display: none;
     }
     .nav-icon {
-        margin: 1em;
         width: 40px;
       }
-      
       .nav-icon:after, 
       .nav-icon:before, 
       .nav-icon div {
@@ -454,15 +440,13 @@ footer hr {
       .nav-icon:hover:before {
         transform: translateY(12px) rotate(135deg);
       }
-      
       .nav-icon:hover:after {
         transform: translateY(-12px) rotate(-135deg);
       }
-      
       .nav-icon:hover div {
         transform: scale(0);
       }
-    .image1 {
+      .image1 {
         width: 75%;
         margin: 0 auto;
     }
@@ -480,7 +464,8 @@ footer hr {
     .offer, .about-us, .gardener {
         padding-bottom: 100px;
     }
-    .about {
+    .about, 
+    .service-content h3 {
         text-align: center;
     }
     .image2 {
@@ -495,9 +480,7 @@ footer hr {
         align-self: center;
         width: 100%;
     }
-    .service-content h3 {
-        text-align: center;
-    }
+    
     .projects-container {
         display: flex;
         flex-wrap: wrap;
@@ -507,20 +490,20 @@ footer hr {
     }
     .clients-content {
         margin-top: 16px;
-        flex-basis: 60%;
+        flex: 1;
         padding-left: 30px;
     }
     .clients-content p {
         text-align: center;
-        
     }
     .image3 {
-        margin: 0;
-        flex-basis: 30%;
-        margin
+        margin: 0 auto;
+    }
+    .image3 img {
+       width: 100%;
     }
     .button-inside {
-        width: 100%;
+        width: 70%;
     }
     .footer-container {
         display: flex;
@@ -539,14 +522,22 @@ footer hr {
     }
     
 }
-               
 
-               
-
-               
 @media (max-width: 416px) {
-    
-    
+    p {
+        font-size: 15px;
+        line-height: 1.8em;
+    }
+    .welcome p {
+        font-size: 15px;
+        margin: 30px 0px;
+    }
+    .about p {
+        margin: 30px 0px;
+    }
+    .offer-content {
+        padding-top: 0px;
+    }
     .projects-container {
         display: flex;
         flex-wrap: wrap;
@@ -559,13 +550,23 @@ footer hr {
         flex-direction: column;
     }
     .clients-content {
-        margin-top: 0px;
+        margin-top: 0;
+        padding-left: 0;
     }
     .clients-content img {
         display: none;
     }
-    
+    .image3 {
+        margin: 0 auto;
+    }
     .newsletter {
-        padding: 30px;
+        padding: 50px 20px;
+    }
+    .button-inside {
+        width: 100%;
+    }
+    #newsletter-hr {
+        opacity: 0.5;
+        margin: 90px 0px;
     }
 }
